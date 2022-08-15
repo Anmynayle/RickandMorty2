@@ -2,15 +2,15 @@ import React from 'react'
 
 const LocationInfo = ({location}) => {
 
-console.log(location)
+//console.log(location)
   return (
-   <article className='container_location'>
-    <h2 className='title'>{location?.name}</h2>
-    <ul className='container_info'>
-        <li><span>Type: {location?.type}</span></li>  
-        <li><span>Dimension: {location?.dimension}</span></li>
-        <li><span>Population: {location?.residents.length}</span></li>       
-    </ul>
+   <article className='location-card'>
+    <h1>{location?.name}</h1>
+        <ul>
+            <li><span>Type: </span>{location?.type}</li>
+            <li><span>Dimension: </span> {location?.dimension}</li>
+            <li><span>Populations: </span> {location?.residents.length}</li>
+        </ul>
    
    </article>
   )
